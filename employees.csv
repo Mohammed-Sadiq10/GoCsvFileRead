@@ -1,0 +1,7 @@
+ID,FirstName,LastName,Age,Gender,Email,Phone,Address,HireDate,Salary,Department,Title,IsActive
+1,Mohammed,Sadiq,22,Male,sadiq45@gmail.com,9148635047,Mysore,2022-09-12,350000,Development,Software Engineer,true
+2,Sinchan,Gopi,21,Female,sinch18@gmail.com,9353777473,Bangalore,2022-09-12,350000,Development,Devops Engineer,true
+3,Tanu,Gowda,22,Male,tanug34@gmail.com,9148635047,Mysore,2001-11-08,4500000,Development,API Development,true
+4,Rahul,KL,30,Male,rahlu1@gmail.com,7865439876,Mangalore,2021-11-30,60000,Finance,Financial Analyst,false
+5,Rohit,Sharma,34,Male,rohitsh10@gmail.com,8050876534,Mumbai,1989-11-08,100000000,Sports,Cricketer,true
+6,Virat,Kohli,33,Male,vkohli35@gmail.com,9876894567,Delhi,1990-07-10,100000000,Sports,Cricketer,true
