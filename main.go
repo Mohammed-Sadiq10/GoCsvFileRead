@@ -16,7 +16,7 @@ func main() {
 
 	log.Println("Processed Employee Data:")
 	for _, emp := range employees {
-		log.Printf("ID: %d, Name: %s %s, Email: %s, Phone: %s, Age: %d, Salary: %.2f, IsActive: %v", emp.ID, emp.FirstName, emp.LastName, emp.Email, emp.Phone, emp.Age, emp.Salary, emp.IsActive)
+		log.Printf("ID: %d, Name: %s %s, Email: %s, Phone: %s, Age: %d, Salary: %.2f, IsActive: %v\n", emp.ID, emp.FirstName, emp.LastName, emp.Email, emp.Phone, emp.Age, emp.Salary, emp.IsActive)
 	}
 
 	err = jsonOutput.WriteJSONFile("jsonOutput.json", employees)
