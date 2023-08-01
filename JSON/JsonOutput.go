@@ -5,16 +5,16 @@ import (
 	"os"
 )
 
-func WriteJSONFile(filePath string, data interface{}) error {
-	jsonFile, err := os.Create(filePath)
+func JsonFileOutput(jsonFilePath string, emp interface{}) error {
+	file, err := os.Create(jsonFilePath)
 	if err != nil {
 		return err
 	}
-	defer jsonFile.Close()
+	defer file.Close()
 
-	encoder := json.NewEncoder(jsonFile)
+	encoder := json.NewEncoder(file)
 	encoder.SetIndent("", "  ")
-	if err := encoder.Encode(data); err != nil {
+	if err := encoder.Encode(emp); err != nil {
 		return err
 	}
 

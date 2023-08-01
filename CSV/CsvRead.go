@@ -9,14 +9,14 @@ import (
 )
 
 
-func ReadCSVFile(filePath string) ([]model.Employee, error) {
-	csvFile, err := os.Open(filePath)
+func CsvFileReading(csvFilePath string) ([]model.Employee, error) {
+	file, err := os.Open(csvFilePath)
 	if err != nil {
 		return nil, err
 	}
-	defer csvFile.Close()
+	defer file.Close()
 
-	csvReader := csv.NewReader(csvFile)
+	csvReader := csv.NewReader(file)
 	csvData, err := csvReader.ReadAll()
 	if err != nil {
 		return nil, err
